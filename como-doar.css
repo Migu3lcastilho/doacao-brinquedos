@@ -1,27 +1,69 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
 }
-.hero{
-    h1{
+
+header {
+        display: flex;
+        justify-content: space-evenly;
+   background: linear-gradient(
+    90deg,
+    #1e417a 0%,
+    #1a396d 50%,
+    #6DB3DE 100%
+  );
+  
+  img{
+        width: 220px;
+    }
+
+  a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+}
+.topo{
+    display: flex;
+    align-items: center;    
+    gap: 25px;
+
+
+    .amarelo{
+        color: rgb(255, 213, 0);
+    }
+}
+.logo{
+    margin-left: -400px;
+}
+.hero {
+    h1 {
         color: #FFD447;
     }
-    h3{
+
+    h3 {
         color: #1B2D70;
     }
-    .comodoar{
+
+    .comodoar {
         display: flex;
         flex-direction: column;
         margin-left: 30px;
         margin-top: 100px;
         gap: 15px;
     }
-    .cards{
+
+    .cards {
         margin-top: 30px;
         display: flex;
         justify-content: space-around;
-        .card{
+
+        .card {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,18 +74,66 @@
             height: 150px;
             color: #1B2D70;
             border-radius: 20px;
-            p{
+
+            p {
                 width: 250px;
                 padding-top: 10px;
             }
         }
     }
 }
-.duvidas{
-    .duvida{
+/* falta acabar */
+.duvidas {
+    display: flex;
+    flex-direction: column;
 
+    .duvida {
+        display: flex;
+        flex-direction: column;
+        background-color: #1B2D70;
+        width: 80%;
+        img{
+            width: 40px;
+        }
     }
-    .montros-SA{
-        
+/* imagem está com display none */
+    .montros-SA {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.localizacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    iframe{
+        width: 80%;
+    }
+    img{
+        position: absolute;
+        z-index: 1;
+        top: 1000px;
+    }
+    h1{
+        margin-top: 40px;
+        color: #FFD447;
+    }
+    h2,h3{
+        color: #1B2D70;
+    }
+}
+.horario{
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    h1{
+        color: #FFD447;
+    }
+    h3{
+        color: #1B2D70;
     }
 }
