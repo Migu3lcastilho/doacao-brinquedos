@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    h1{
+        color: #FFD447;
+    }
+    h3{
+        color: #1B2D70;
+    }
+    .comodoar{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 100px;
+        gap: 15px;
+    }
+    .cards{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #FFD447;
+            width: 350px;
+            height: 150px;
+            color: #1B2D70;
+            border-radius: 20px;
+            p{
+                width: 250px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+.duvidas{
+    .duvida{
+
+    }
+    .montros-SA{
+        
+    }
+}
