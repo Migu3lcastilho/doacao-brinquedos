@@ -109,3 +109,36 @@ header {
     }
   }
 }
+footer {
+    display: flex;
+    justify-content: space-around;
+  background-color: #12519f;
+  padding-bottom: 50px;
+  h1 {
+    color: white;
+  }
+  .doar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p{
+        position: fixed;
+        bottom: 20px;
+        color: white;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #102A5F;
+      text-decoration: none;
+      width: 200px;
+      height: 50px;
+      color: white;
+    }
+  }
+  .logo-final{
+    height: 250px;
+  }
+}
