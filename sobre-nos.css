@@ -32,3 +32,25 @@ header {
     margin-left: -400px;
   }
 }
+.hero{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    .esquerda{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+h1{
+    color: #FFD447;
+}
+p{
+    width: 800px;
+}
+    }
+    .direita{
+        img{
+            width: 250px;
+            height: ;
+        }
+    }
+}
