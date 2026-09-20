@@ -45,12 +45,48 @@ h1{
 }
 p{
     width: 800px;
+    font-size: 20px;
+    color: #263B65;
 }
     }
     .direita{
         img{
             width: 250px;
             height: ;
+        }
+    }
+}
+.missao{
+    background-color: #12519F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1{
+color: #FFD447;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+color: white;
+width: 800px;
+    }
+}
+.cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    .card{
+        display: flex;justify-content: center; align-items: center;text-align: center;flex-direction: column;gap: 30px;
+        background-color: #E4B51A ;
+        border-radius: 20px;
+        width: 350px;
+        height: 250px;
+        h1{
+            color: #021350;
         }
     }
 }
