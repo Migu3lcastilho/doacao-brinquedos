@@ -30,7 +30,7 @@ header {
     }
   }
   .logo {
-    margin-left: -400px;
+    margin-left: -300px;
   }
 }
 .hero {
@@ -93,16 +93,22 @@ header {
     margin-top: 50px;
     margin-right: 10%;
     margin-left: 10%;
-
+border-radius: 20px;
     background-color: #1b2d70;
-    width: 80%;
+    width: 70%;
     img {
       width: 40px;
     }
   }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
   /* imagem está com display none */
   .montros-SA {
-    display: none;
+
     position: absolute;
     top: 0;
     right: 0;
@@ -216,4 +222,7 @@ footer {
   .logo-final{
     height: 250px;
   }
+}
+.elipce{
+  width: 100%;
 }
