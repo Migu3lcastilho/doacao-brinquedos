@@ -319,37 +319,61 @@ h2 {
   color: var(--ink);
 }
 
-.footer-wave {
-  height: 84px;
-  margin-bottom: -1px;
-  overflow: hidden;
-  background: var(--white);
+footer {
+    display: flex;
+    justify-content: space-around;
+  background-color: #12519f;
+  padding-bottom: 50px;
+  .doar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    h1 {
+      color: white;
+    }
+    p{
+        position: absolute;
+        bottom: 20px;
+        color: white;
+        bottom: 0;
+        width: 600px;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #102A5F;
+      text-decoration: none;
+      width: 200px;
+      height: 50px;
+      color: white;
+    }
+  }
+  .redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      color: white;
+    }
+    img{
+      
+      
+    }
+  }
+  .imagens{
+  }
+  .logo-final{
+    height: 250px;
+  }
 }
-
-.footer-wave svg {
-  display: block;
+.elipce{
   width: 100%;
-  height: 100%;
-}
-
-.footer-wave path { fill: var(--blue); }
-
-.site-footer {
-  color: var(--white);
-  background: linear-gradient(180deg, var(--blue) 0%, #1a4d97 100%);
-}
-
-.footer-inner {
-  min-height: 320px;
-  padding: 10px 0 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-action h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
+  display: block;
 }
 
 .donate-button {
@@ -409,7 +433,7 @@ h2 {
 .facebook { background: #3569bd; }
 .youtube { background: #ef3d3d; font-size: 14px !important; }
 
-.footer-brand { transform: scale(1.35); margin-right: 70px; }
+
 
 .copyright {
   margin: 0;
