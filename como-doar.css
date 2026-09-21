@@ -181,6 +181,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
     position: relative;
     h1 {
       color: white;
@@ -208,16 +209,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     h1{
       color: white;
     }
-  }
-  .imagens{
     img{
-      display: flex;
-        gap: 20px;x 
+      
       
     }
+  }
+  .imagens{
   }
   .logo-final{
     height: 250px;
@@ -225,4 +226,5 @@ footer {
 }
 .elipce{
   width: 100%;
+  display: block;
 }
