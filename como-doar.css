@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -61,7 +62,7 @@ header {
       flex-direction: column;
       text-align: center;
       background-color: #ffd447;
-      width: 350px;
+      width: 320px;
       height: 150px;
       color: #1b2d70;
       border-radius: 20px;
