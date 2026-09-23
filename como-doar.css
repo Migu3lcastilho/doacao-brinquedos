@@ -4,29 +4,42 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   margin-top: 150px;
 }
 
 header {
   display: flex;
+
   justify-content: space-between;
-  background: linear-gradient(90deg, #1e417a 0%, #1a396d 50%, #6db3de 100%);
+
+  background: linear-gradient(90deg,
+      #1e417a 0%,
+      #1a396d 50%,
+      #6db3de 100%);
+
   position: fixed;
+
   padding-left: 20px;
   padding-right: 20px;
+
   z-index: 5;
+
   left: 0;
   top: 0;
+
   width: 100%;
-  .close{
-    width: 60px;
-    height: 60px;
+
+
+  /* BOTÃO DE FECHAR ESCONDIDO NO DESKTOP */
+  .menuClose {
+    display: none;
   }
 
-  img {
-    width: 220px;
-  }
+
+
+
 
   a {
     text-decoration: none;
@@ -35,14 +48,20 @@ header {
     font-weight: 600;
   }
 
+
   .topo {
+
     display: flex;
+
     align-items: center;
+
     gap: 25px;
+
 
     .amarelo {
       color: rgb(255, 213, 0);
     }
+
 
     @media(max-width:1050px) {
 
@@ -51,13 +70,11 @@ header {
       transform: translateX(-100%);
 
       top: 0;
-
       left: 0;
 
       background-color: #12519F;
 
       width: 50%;
-
       height: 100vh;
 
       flex-direction: column;
@@ -70,17 +87,34 @@ header {
 
       transition: transform 0.3s ease;
 
+
+      /* BOTÃO DE FECHAR APARECE NO MENU MOBILE */
       .menuClose {
+
+        background: transparent;
+
+        border: none;
 
         display: flex;
 
       }
+      .dividir{
+  display: none;
+ }
 
+    }
+
+  }
+
+
+  .logo {
+    img {
+      width: 220px;
     }
   }
 
-  .logo {
-    /* margin-left: -300px; */
+  .close {
+    width: 50px;
   }
 
   .hamburguer {
@@ -93,26 +127,26 @@ header {
 
     cursor: pointer;
 
+
     @media(max-width:1050px) {
 
       display: flex;
+      align-items: center;
 
       img {
-
         height: 50px;
-
         width: 50px;
-
       }
 
     }
+
   }
+
 }
 
+
 .isOpen {
-
   transform: translateX(0) !important;
-
 }
 
 
@@ -178,6 +212,7 @@ header {
 ========================= */
 
 .duvidas {
+
   display: flex;
   flex-direction: column;
 
@@ -189,6 +224,7 @@ header {
   }
 
   .duvida {
+
     display: flex;
     flex-direction: column;
 
@@ -201,6 +237,9 @@ header {
 
     width: 70%;
 
+    position: relative;
+    z-index: 2;
+
     /* Impede o conteúdo de sair do card */
     overflow: hidden;
 
@@ -209,24 +248,16 @@ header {
     }
   }
 
-
-  /* =========================
-     CADA PERGUNTA
-  ========================= */
-
   .container {
+
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     align-items: flex-start;
 
     padding: 20px;
 
     position: relative;
-
-
-    /* Pergunta + resposta */
 
     .pergunta {
       width: 90%;
@@ -236,42 +267,27 @@ header {
       }
     }
 
-
-    /* Título */
-
     h2 {
       color: white;
       font-size: 20px;
       margin: 0;
     }
 
-
-    /* =========================
-       RESPOSTA ESCONDIDA
-    ========================= */
-
     .resposta {
       display: none;
-      color: white;
 
+      color: white;
       font-size: 16px;
       line-height: 1.5;
-
       margin-top: 15px;
     }
 
-
-    /* =========================
-       BOTÕES DAS SETAS
-    ========================= */
-
     .btnMenu,
     .menuClose {
+
       border: none;
       background: none;
-
       cursor: pointer;
-
       padding: 0;
 
       display: flex;
@@ -284,35 +300,19 @@ header {
       }
     }
 
-
-    /* Seta para cima começa escondida */
-
     .menuClose {
       display: none;
     }
 
-
-    /* =========================
-       QUANDO A PERGUNTA ESTÁ ABERTA
-    ========================= */
-
     &.isOpen {
-
-      /* Mostra a resposta */
 
       .resposta {
         display: block;
       }
 
-
-      /* Esconde seta para baixo */
-
       .btnMenu {
         display: none;
       }
-
-
-      /* Mostra seta para cima */
 
       .menuClose {
         display: flex;
@@ -320,12 +320,8 @@ header {
     }
   }
 
-
-  /* =========================
-     MONSTROS S.A.
-  ========================= */
-
   .montros-SA {
+
     position: absolute;
 
     right: 0;
@@ -335,6 +331,18 @@ header {
     width: auto;
 
     z-index: 1;
+
+    @media(max-width: 900px) {
+      top: 720px;
+      height: 400px;
+      width: 200px;
+    }
+
+    @media(max-width: 650px) {
+      top: 1100px;
+      height: 400px;
+      width: 200px;
+    }
   }
 }
 
@@ -399,6 +407,11 @@ header {
       z-index: 2;
 
       height: 250px;
+
+      @media(max-width:700px) {
+        height: 150px;
+        left: 30px;
+      }
     }
   }
 }
@@ -451,7 +464,31 @@ footer {
   background-color: #12519f;
 
   padding-bottom: 50px;
+  width: 100%;
 
+  @media(max-width:1050px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+.logo-final{
+
+  height: 100px;
+}
+    h1 {
+      padding-top: 20px;
+      font-size: 24px;
+    }
+
+    a {
+      font-size: 15px;
+    }
+
+    p {
+      display: none;
+    }
+
+  }
 
   /* Doar */
 
@@ -513,9 +550,14 @@ footer {
     h1 {
       color: white;
     }
-
+    
     img {
       width: 40px;
+    }
+    @media(max-width:1000px){
+      img{
+        width: 30px;
+      }
     }
   }
 
@@ -531,5 +573,9 @@ footer {
 
   .logo-final {
     height: 250px;
+    @media(max-width:1000px){
+      width: 300px;
+      height: 150px;
+    }
   }
 }
