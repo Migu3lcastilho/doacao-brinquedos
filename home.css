@@ -6,7 +6,7 @@
 }
 
 body {
-  margin-top: 150px;
+  margin-top: 109px;
 }
 
 header {
@@ -143,8 +143,99 @@ header {
   }
 
 }
-
-
 .isOpen {
   transform: translateX(0) !important;
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    .esquerda{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+h1{
+    color: #FFD447;
+    font-size: 40px;
+    width: 400px;
+}
+h2{
+    color: #102A5F;
+}
+p{
+    font-size: 22px;
+    width: 400px;
+    color: #102A5F;
+}
+h5{
+    font-size: 15px;
+    color: #FFD447;
+}
+a{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 12px;
+}
+.botao{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.quero{
+    border: none;
+    background-color: #FFD447;
+}
+.saiba{
+    background-color: white;
+    border: solid 2px #102A5F;
+}
+    }
+    .direita{
+        img{
+            height: 600px;
+            display: block;
+        }
+    }
+}
+.impacto{
+        
+    display: flex;
+flex-direction: column;
+align-items: center;  
+
+    .card{
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    h1{
+        color: #FFD447;
+        margin-left: -850px;
+        margin-bottom: 30px;
+        
+    }
+    p{
+        color: #102A5F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .cards{
+        opacity: 84%;
+        background-color: #FFD447;
+        padding: 50px;
+        border-radius: 50px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 }
