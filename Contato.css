@@ -1,98 +1,298 @@
-*{
+* {
     margin: 0;
     padding: 0;
-  font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+
 
 }
 
+
+
 header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: linear-gradient(90deg,
+            #1e417a 0%,
+            #1a396d 50%,
+            #6DB3DE 100%);
+
+    height: 100px;
+
+
+
+
+
+    @media (max-width: 450px) {
+
         display: flex;
-        justify-content: space-evenly;
-   background: linear-gradient(
-    90deg,
-    #1e417a 0%,
-    #1a396d 50%,
-    #6DB3DE 100%
-  );
-  
-  img{
-        width: 220px;
+
+        flex-direction: column;
+        padding: 100px 0;
     }
 
-  a{
-    
+}
+
+.logo {
+    margin-left: -300px;
+}
+
+.logo img {
+    width: 220px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.topo a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
-  }
-  
 }
-.topo{
-    display: flex;
-    align-items: center;    
-    gap: 25px;
 
-
-    .amarelo{
-        color: rgb(255, 213, 0);
-    }
-}
-.logo{
-    margin-left: -400px;
+.topo .amarelo {
+    color: rgb(255, 213, 0);
 }
 
 
-.lado-esquerdo{
-      
-    h1{
-        color: #E4B51A;
-    }
-}
-.contato{
-    display: flex;
-    flex-direction: column;
-    
-}
 
-.hero{
-    display: flex;
-    margin: 50px;
-    gap: 400px;
-}
 
-.informação{
+.hero {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin: 25px;
-}
+    justify-content: space-between;
+    padding: 50px;
+    margin-bottom: 12px;
 
-.lado-direito{
-    display: flex;
-    form{
-        background: #E4B51A;
-        height: 200px;
-        padding: 100px;
-        border-radius: 50px;
-        display: flex;
-        gap: 50px;
-        
 
-        input{
-            border-radius: 10px;
-            height: 30px;
-            width: 280px;
-            padding: 2px;
-            border: none;
-            align-items: center;
 
-           
-           
+
+    @media (max-width: 1050px) {
+        flex-direction: column;
+        gap: 80px;
+
+        .lado-direito{
+            width: 100%;
         }
     }
 }
 
-.assunto{
+
+
+
+
+
+.contato {
+    display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
+
+
+}
+
+.contato h1 {
+    color: #E4B51A;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.contato p {
+    color: #173b7a;
+    font-size: 18px;
+}
+
+.informação {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+
+
+
+}
+
+.informação img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.informação p {
+    color: #173b7a;
+    font-size: 16px;
+}
+
+
+.lado-direito {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+.imagem-contato {
+    position: absolute;
+
+    width: 300px;
+
+    top: -108px;
+    right: -57px;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.lado-direito form {
+    position: relative;
+    z-index: 1;
+
+    width: 650px;
+    min-height: 390px;
+
+    padding: 28px 35px 30px;
+
+    background: #E4B51A;
+    opacity: 84%;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+
+
+    @media (max-width: 450px) {
+        width: 350px;
+
+    }
+}
+
+
+
+.campos {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.campos input {
+    width: 50%;
+}
+
+
+
+
+.lado-direito input {
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 15px;
+
+    background: #f5f5f7;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+.lado-direito input::placeholder {
+    color: #71809d;
+}
+
+
+.Assunto {
+    width: 100%;
+}
+
+
+
+.Mensagem {
+    width: 100%;
+}
+
+.Mensagem textarea {
+    width: 100%;
+    height: 150px;
+
+    resize: none;
+
+    padding: 12px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 15px;
+
+    background: #f5f5f7;
+
+    color: #555;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+.Mensagem textarea::placeholder {
+    color: #71809d;
+}
+
+
+
+
+.Enviar {
+    width: 215px;
+    height: 43px;
+
+    margin: 10px auto 0;
+
+    border: none;
+    border-radius: 13px;
+
+    background: #173b7a;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.Enviar:hover {
+    background: #102f63;
+    transform: scale(1.03);
+}
+
+.Enviar img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
