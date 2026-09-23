@@ -4,11 +4,25 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  margin-top: 150px;
+}
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: linear-gradient(90deg, #1e417a 0%, #1a396d 50%, #6db3de 100%);
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  .close{
+    width: 60px;
+    height: 60px;
+  }
 
   img {
     width: 220px;
@@ -29,11 +43,76 @@ header {
     .amarelo {
       color: rgb(255, 213, 0);
     }
+
+    @media(max-width:1050px) {
+
+      position: fixed;
+
+      transform: translateX(-100%);
+
+      top: 0;
+
+      left: 0;
+
+      background-color: #12519F;
+
+      width: 50%;
+
+      height: 100vh;
+
+      flex-direction: column;
+
+      border-right: 1px solid gray;
+
+      padding: 20px;
+
+      gap: 20px;
+
+      transition: transform 0.3s ease;
+
+      .menuClose {
+
+        display: flex;
+
+      }
+
+    }
   }
 
   .logo {
-    margin-left: -300px;
+    /* margin-left: -300px; */
   }
+
+  .hamburguer {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    @media(max-width:1050px) {
+
+      display: flex;
+
+      img {
+
+        height: 50px;
+
+        width: 50px;
+
+      }
+
+    }
+  }
+}
+
+.isOpen {
+
+  transform: translateX(0) !important;
+
 }
 
 
@@ -68,7 +147,8 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-gap: 12px;
+    gap: 12px;
+
     .card {
       display: flex;
       justify-content: center;
@@ -150,7 +230,8 @@ gap: 12px;
 
     .pergunta {
       width: 90%;
-      p{
+
+      p {
         font-size: 20px;
       }
     }
