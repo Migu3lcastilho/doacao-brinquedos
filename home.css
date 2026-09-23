@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin-top: 150px;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  background: linear-gradient(90deg,
+      #1e417a 0%,
+      #1a396d 50%,
+      #6db3de 100%);
+
+  position: fixed;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  z-index: 5;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+
+  /* BOTÃO DE FECHAR ESCONDIDO NO DESKTOP */
+  .menuClose {
+    display: none;
+  }
+
+
+
+
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+  .topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+
+    .amarelo {
+      color: rgb(255, 213, 0);
+    }
+
+
+    @media(max-width:1050px) {
+
+      position: fixed;
+
+      transform: translateX(-100%);
+
+      top: 0;
+      left: 0;
+
+      background-color: #12519F;
+
+      width: 50%;
+      height: 100vh;
+
+      flex-direction: column;
+
+      border-right: 1px solid gray;
+
+      padding: 20px;
+
+      gap: 20px;
+
+      transition: transform 0.3s ease;
+
+
+      /* BOTÃO DE FECHAR APARECE NO MENU MOBILE */
+      .menuClose {
+
+        background: transparent;
+
+        border: none;
+
+        display: flex;
+
+      }
+      .dividir{
+  display: none;
+ }
+
+    }
+
+  }
+
+
+  .logo {
+    img {
+      width: 220px;
+    }
+  }
+
+  .close {
+    width: 50px;
+  }
+
+  .hamburguer {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+
+    @media(max-width:1050px) {
+
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+    }
+
+  }
+
+}
+
+
+.isOpen {
+  transform: translateX(0) !important;
+}
