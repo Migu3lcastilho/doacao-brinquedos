@@ -47,7 +47,7 @@ header {
     .topo {
 
         display: flex;
-
+padding-right: 50px;
         align-items: center;
 
         gap: 25px;
@@ -132,6 +132,7 @@ header {
             img {
                 height: 50px;
                 width: 50px;
+                padding-right: 50px;
             }
 
         }
