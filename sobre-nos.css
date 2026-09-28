@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   margin-top: 200px;
 }
+
 header {
 
   display: flex;
@@ -91,10 +93,10 @@ header {
       gap: 20px;
 
       transition: transform 0.3s ease;
-       
-      .divider{
-            display: none;
-        }  
+
+      .divider {
+        display: none;
+      }
 
       .menuClose {
 
@@ -138,7 +140,7 @@ header {
 
       display: flex;
       align-items: center;
-         
+
       img {
         height: 50px;
         width: 50px;
@@ -154,100 +156,239 @@ header {
 .isOpen {
   transform: translateX(0) !important;
 }
-.hero{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px ;
-    .esquerda{
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-h1{
-    color: #FFD447;
-    font-size: 50px;
-}
-p{
-    width: 800px;
-    font-size: 20px;
-    color: #263B65;
-}
-    }
-    .direita{
-        img{
-            width: 250px;
-            height: ;
-        }
-    }
-}
-.missao{
-    background-color: #12519F;
-    height: 400px;
-    display: flex;
-    justify-content: center;
+
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+
+  @media(max-width:1100px) {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    h1{
-color: #FFD447;
-font-size: 40px;
+    img{
+      margin-top: 40px;
     }
     p{
-        font-size: 25px;
-        text-align: center;
-color: white;
-width: 800px;
+      text-align: center;
     }
-}
-.cards{
-    margin-top: 20px;
+  }
+
+  .esquerda {
     display: flex;
-    justify-content: space-around;
-    .card{
-        display: flex;justify-content: center; align-items: center;text-align: center;flex-direction: column;gap: 30px;
-        background-color: #E4B51A ;
-        border-radius: 50px;
-        width: 350px;
-        opacity: 74%;
-        height: 250px;
-        h1{
-            color: #021350;
-        }
+    gap: 20px;
+    flex-direction: column;
+
+    h1 {
+      color: #FFD447;
+      font-size: 50px;
     }
+
+    p {
+      width: 800px;
+      font-size: 20px;
+      color: #263B65;
+      @media(max-width:1000px){
+        width: 100%;
+      }
+    }
+  }
+
+  .direita {
+    img {
+      width: 250px;
+      height: ;
+    }
+  }
 }
-footer {
-    display: flex;
-    justify-content: space-around;
-  background-color: #12519f;
+
+.missao {
+  background-color: #12519F;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 100px;
+
+  h1 {
+    color: #FFD447;
+    font-size: 40px;
+  }
+
+  p {
+    width: 800px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    @media(max-width:1000px){
+        width: 100%;
+        font-size: 20px;
+      }
+  }
+}
+
+.cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #E4B51A;
+    border-radius: 50px;
+    width: 350px;
+    opacity: 74%;
+    height: 250px;
+
+    h1 {
+      color: #021350;
+    }
+  }
+}
+
+.elipce {
+  width: 100%;
+  display: block;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  display: flex;
+
+  justify-content: space-around;
+
+  background-color: #12519f;
+
+  padding-bottom: 50px;
+  width: 100%;
+
+  @media(max-width:1050px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .logo-final {
+
+      height: 100px;
+    }
+
+    h1 {
+      padding-top: 20px;
+      font-size: 24px;
+    }
+
+    a {
+      font-size: 15px;
+    }
+
+    p {
+      display: none;
+    }
+
+  }
+
+  /* Doar */
+
   .doar {
     display: flex;
+
     flex-direction: column;
+
     gap: 20px;
+
+    justify-content: center;
+
+    position: relative;
+
     h1 {
       color: white;
     }
-    p{
-        position: fixed;
-        bottom: 20px;
-        color: white;
+
+    p {
+      position: absolute;
+
+      bottom: 0;
+
+      color: white;
+
+      width: 600px;
     }
+
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        background-color: #102A5F;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 20px;
+
+      background-color: #102A5F;
+
       text-decoration: none;
+
       width: 200px;
       height: 50px;
+
       color: white;
     }
   }
-  .logo-final{
+
+
+  /* Redes sociais */
+
+  .redes {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: white;
+    }
+
+    img {
+      width: 40px;
+    }
+
+    @media(max-width:1000px) {
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+
+  .imagens {
+    display: flex;
+
+    gap: 15px;
+  }
+
+
+  /* Logo final */
+
+  .logo-final {
     height: 250px;
+
+    @media(max-width:1000px) {
+      width: 300px;
+      height: 150px;
+    }
   }
 }
