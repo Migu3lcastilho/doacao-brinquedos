@@ -6,7 +6,7 @@
 }
 
 body {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 header {
@@ -54,10 +54,10 @@ header {
     font-size: 16px;
     font-weight: 600;
 
-    &:hover{
-            color: rgb(255, 213, 0);
-
+    &:hover {
+      color: rgb(255, 213, 0);
     }
+
   }
 
 
@@ -99,7 +99,7 @@ header {
 
       transition: transform 0.3s ease;
 
-      .dividir {
+      .divider {
         display: none;
       }
 
@@ -123,6 +123,13 @@ header {
   .logo {
     img {
       width: 220px;
+      &:hover{
+        opacity: 64%;
+        transform: scale(1.1);
+      }
+    }
+    img:hover{
+      transition: transform 0.8s ease;
     }
   }
 

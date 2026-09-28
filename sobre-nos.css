@@ -253,6 +253,7 @@ background-image: url("Imagens/image 28.png");
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 background-image: url("Imagens/image 28.png");
     background-position: center;
     background-size: cover;
