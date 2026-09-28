@@ -53,6 +53,11 @@ header {
     color: white;
     font-size: 16px;
     font-weight: 600;
+
+    &:hover {
+      color: rgb(255, 213, 0);
+    }
+
   }
 
 
@@ -118,6 +123,13 @@ header {
   .logo {
     img {
       width: 220px;
+      &:hover{
+        opacity: 64%;
+        transform: scale(1.1);
+      }
+    }
+    img:hover{
+      transition: transform 0.8s ease;
     }
   }
 
@@ -282,7 +294,7 @@ footer {
 
   justify-content: space-around;
 
-  background-color: #12519f;
+  background-color: #0753B7;
 
   padding-bottom: 50px;
   width: 100%;
@@ -356,6 +368,11 @@ footer {
       height: 50px;
 
       color: white;
+
+      transition: transform 0.3s ease;
+    }
+    a:hover{
+      transform: scale(1.05);
     }
   }
 
@@ -376,6 +393,11 @@ footer {
 
     img {
       width: 40px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.2);
     }
 
     @media(max-width:1000px) {
