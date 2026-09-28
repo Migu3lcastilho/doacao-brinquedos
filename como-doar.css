@@ -22,7 +22,7 @@ header {
   position: fixed;
 
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 200px;
 
   z-index: 5;
 
@@ -461,7 +461,7 @@ footer {
 
   justify-content: space-around;
 
-  background-color: #12519f;
+  background-color: #0753B7;
 
   padding-bottom: 50px;
   width: 100%;
