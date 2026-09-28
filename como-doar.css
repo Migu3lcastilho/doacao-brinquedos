@@ -46,6 +46,9 @@ header {
     color: white;
     font-size: 16px;
     font-weight: 600;
+    &:hover{
+  color: #ffd447;
+}
   }
 
 
@@ -539,6 +542,11 @@ footer {
       height: 50px;
 
       color: white;
+
+      transition: transform 0.3s ease;
+    }
+    a:hover{
+      transform: scale(1.05);
     }
   }
 
@@ -559,7 +567,13 @@ footer {
     
     img {
       width: 40px;
+      object-fit: contain;
+      transition: transform 0.2s ease;
     }
+    img:hover {
+      transform: scale(1.2);
+    }
+
     @media(max-width:1000px){
       img{
         width: 30px;
