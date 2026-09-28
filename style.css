@@ -43,41 +43,171 @@ a:hover { text-decoration: none; }
 }
 
 header {
+
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: linear-gradient(90deg, #1e417a 0%, #1a396d 50%, #6db3de 100%);
-  padding: 12px 24px;
-  gap: 24px;
-  box-shadow: 0 8px 20px rgba(17, 38, 63, 0.15);
+
+  justify-content: space-between;
+
+  background: linear-gradient(90deg,
+      #1e417a 0%,
+      #1a396d 50%,
+      #6db3de 100%);
+
+  position: fixed;
+
+  padding-left: 20px;
+  padding-right: 200px;
+
+  z-index: 5;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+
+  /* BOTÃO DE FECHAR ESCONDIDO NO DESKTOP */
+  .menuClose {
+    display: none;
+  }
+
+
+
+
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+  .topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+
+    .amarelo {
+      color: rgb(255, 213, 0);
+    }
+
+
+    @media(max-width:1050px) {
+
+      position: fixed;
+
+      transform: translateX(-100%);
+
+      top: 0;
+      left: 0;
+
+      background-color: #12519F;
+
+      width: 50%;
+      height: 100vh;
+
+      flex-direction: column;
+
+      border-right: 1px solid gray;
+
+      padding: 20px;
+
+      gap: 20px;
+
+      transition: transform 0.3s ease;
+       
+      .divider{
+            display: none;
+        }  
+
+      .menuClose {
+
+        background: transparent;
+
+        border: none;
+
+        display: flex;
+
+
+
+      }
+
+    }
+
+  }
+
+
+  .logo {
+    img {
+      width: 220px;
+    }
+  }
+
+  .close {
+    width: 50px;
+  }
+
+  .hamburguer {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+
+    @media(max-width:1050px) {
+
+      display: flex;
+      align-items: center;
+         
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+    }
+
+  }
+
 }
 
-header img {
-  width: 220px;
-  height: auto;
-  display: block;
+
+.isOpen {
+  transform: translateX(0) !important;
 }
 
-header .topo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 18px;
+
+
+.logo img {
+    width: 220px;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
-header a:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+.topo a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
+
+.topo .amarelo {
+    color: rgb(255, 213, 0);
+}
+
+
 
 .brand {
   display: inline-flex;
@@ -360,13 +490,9 @@ footer {
     h1{
       color: white;
     }
-    img{
-      
-      
-    }
+   
   }
-  .imagens{
-  }
+  
   .logo-final{
     height: 250px;
   }
