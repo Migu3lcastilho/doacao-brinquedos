@@ -456,7 +456,7 @@ background-image: url("Imagens/image 28.png");
   gap: 10px;
 
   padding-left: 30px;
-
+margin-bottom: 40px;
   margin-top: 30px;
   margin-left: 50px;
 
@@ -466,6 +466,7 @@ background-image: url("Imagens/image 28.png");
 
   h3 {
     color: #1b2d70;
+    font-size: 20px;
   }
 }
 

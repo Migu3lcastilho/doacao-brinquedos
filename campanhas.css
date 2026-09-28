@@ -190,7 +190,9 @@ header {
   background: url('imagens/image\ 28.png') center center;
   width: 100%;
   height: 100%;
-
+.card3{
+  margin-bottom: 50px;
+}
   .card1 {
     display: flex;
     flex-direction: row;
