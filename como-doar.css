@@ -113,6 +113,13 @@ header {
   .logo {
     img {
       width: 220px;
+      &:hover{
+        opacity: 64%;
+        transform: scale(1.1);
+      }
+    }
+    img:hover{
+      transition: transform 0.8s ease;
     }
   }
 
@@ -177,6 +184,7 @@ header {
     margin-left: 30px;
     margin-top: 100px;
     gap: 15px;
+    
   }
 
   .cards {
@@ -205,6 +213,7 @@ header {
         width: 250px;
         padding-top: 10px;
       }
+      
     }
   }
 }
