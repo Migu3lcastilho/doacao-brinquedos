@@ -46,6 +46,10 @@ header {
         color: white;
         font-size: 16px;
         font-weight: 600;
+        &:hover{
+            transition: 1s;
+            color: #FFD447;
+        }
     }
 
 
@@ -209,11 +213,21 @@ header {
         .quero {
             border: none;
             background-color: #FFD447;
+             &:hover{
+                transition: 1s;
+                background-color:#102A5F;
+                color: white;
+            }
         }
 
         .saiba {
             background-color: white;
             border: solid 2px #102A5F;
+            &:hover{
+                transition: 1s;
+                background-color:#102A5F;
+                color: white;
+            }
         }
     }
 
@@ -221,6 +235,10 @@ header {
         img {
             height: 600px;
             display: block;
+            &:hover{
+                transition: 2s;
+                transform: rotateY(360deg);
+            }
         }
     }
 }
@@ -342,7 +360,7 @@ header {
     }
 }
 
-footer {
+footer { 
     display: flex;
 
     justify-content: space-around;
