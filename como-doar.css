@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin-top: 150px;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  background: linear-gradient(90deg,
+      #1e417a 0%,
+      #1a396d 50%,
+      #6db3de 100%);
+
+  position: fixed;
+
+  padding-left: 20px;
+  padding-right: 200px;
+
+  z-index: 5;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+
+  /* BOTÃO DE FECHAR ESCONDIDO NO DESKTOP */
+  .menuClose {
+    display: none;
+  }
+
+
+
+
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+  color: #ffd447;
+}
+  }
+
+
+  .topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+
+    .amarelo {
+      color: rgb(255, 213, 0);
+    }
+
+
+    @media(max-width:1050px) {
+
+      position: fixed;
+
+      transform: translateX(-100%);
+
+      top: 0;
+      left: 0;
+
+      background-color: #12519F;
+
+      width: 50%;
+      height: 100vh;
+
+      flex-direction: column;
+
+      border-right: 1px solid gray;
+
+      padding: 20px;
+
+      gap: 20px;
+
+      transition: transform 0.3s ease;
+
+
+      /* BOTÃO DE FECHAR APARECE NO MENU MOBILE */
+      .menuClose {
+
+        background: transparent;
+
+        border: none;
+
+        display: flex;
+
+      }
+      .dividir{
+  display: none;
+ }
+
+    }
+
+  }
+
+
+  .logo {
+    img {
+      width: 220px;
+      &:hover{
+        opacity: 64%;
+        transform: scale(1.1);
+      }
+    }
+    img:hover{
+      transition: transform 0.8s ease;
+    }
+  }
+
+  .close {
+    width: 50px;
+  }
+
+  .hamburguer {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+
+    @media(max-width:1050px) {
+
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+    }
+
+  }
+
+}
+
+
+.isOpen {
+  transform: translateX(0) !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  h1 {
+    font-size: 40px;
+    color: #ffd447;
+    margin-left: 2%;
+  }
+
+  h3 {
+    margin-left: 2%;
+    font-size: 30px;
+    color: #1b2d70;
+  }
+
+  .comodoar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 100px;
+    gap: 15px;
+    
+  }
+
+  .cards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: #ffd447;
+
+      width: 320px;
+      height: 150px;
+
+      color: #1b2d70;
+
+      border-radius: 20px;
+
+      p {
+        width: 250px;
+        padding-top: 10px;
+      }
+      
+    }
+  }
+}
+
+
+/* =========================
+   DÚVIDAS
+========================= */
+
+.duvidas {
+
+  display: flex;
+  flex-direction: column;
+background-image: url("Imagens/image 28.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+  h1 {
+    font-size: 40px;
+    margin-top: 100px;
+    color: #ffd447;
+    margin-left: 5%;
+  }
+
+  .duvida {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    border-radius: 20px;
+    background-color: #1b2d70;
+
+    width: 70%;
+
+    position: relative;
+    z-index: 2;
+
+    /* Impede o conteúdo de sair do card */
+    overflow: hidden;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    position: relative;
+
+    .pergunta {
+      width: 90%;
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .resposta {
+      display: none;
+
+      color: white;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 15px;
+    }
+
+    .btnMenu,
+    .menuClose {
+
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .menuClose {
+      display: none;
+    }
+
+    &.isOpen {
+
+      .resposta {
+        display: block;
+      }
+
+      .btnMenu {
+        display: none;
+      }
+
+      .menuClose {
+        display: flex;
+      }
+    }
+  }
+
+  .montros-SA {
+
+    position: absolute;
+
+    right: 0;
+    top: 550px;
+
+    height: 600px;
+    width: auto;
+
+    z-index: 1;
+
+    @media(max-width: 900px) {
+      top: 720px;
+      height: 400px;
+      width: 200px;
+    }
+
+    @media(max-width: 650px) {
+      top: 1100px;
+      height: 400px;
+      width: 200px;
+    }
+  }
+}
+
+
+/* =========================
+   LOCALIZAÇÃO
+========================= */
+
+.localizacao {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-left: 50px;
+    margin-top: 40px;
+
+    color: #ffd447;
+  }
+
+  h2,
+  h3 {
+    color: #1b2d70;
+    margin-left: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .mapa {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 12px;
+
+    height: 500px;
+
+    iframe {
+      width: 80%;
+
+      border-radius: 20px;
+
+      position: absolute;
+    }
+
+    img {
+      position: absolute;
+
+      bottom: 0;
+      left: 100px;
+
+      z-index: 2;
+
+      height: 250px;
+
+      @media(max-width:700px) {
+        height: 150px;
+        left: 30px;
+      }
+    }
+  }
+}
+
+
+/* =========================
+   HORÁRIO
+========================= */
+
+.horario {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-left: 30px;
+
+  margin-top: 30px;
+  margin-left: 50px;
+
+  h1 {
+    color: #ffd447;
+  }
+
+  h3 {
+    color: #1b2d70;
+  }
+}
+
+
+/* =========================
+   ELIPSE
+========================= */
+
+.elipce {
+  width: 100%;
+  display: block;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  display: flex;
+
+  justify-content: space-around;
+
+  background-color: #0753B7;
+
+  padding-bottom: 50px;
+  width: 100%;
+
+  @media(max-width:1050px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+.logo-final{
+
+  height: 100px;
+}
+    h1 {
+      padding-top: 20px;
+      font-size: 24px;
+    }
+
+    a {
+      font-size: 15px;
+    }
+
+    p {
+      display: none;
+    }
+
+  }
+
+  /* Doar */
+
+  .doar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    position: relative;
+
+    h1 {
+      color: white;
+    }
+
+    p {
+      position: absolute;
+
+      bottom: 0;
+
+      color: white;
+
+      width: 600px;
+    }
+
+    a {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 20px;
+
+      background-color: #102A5F;
+
+      text-decoration: none;
+
+      width: 200px;
+      height: 50px;
+
+      color: white;
+
+      transition: transform 0.3s ease;
+    }
+    a:hover{
+      transform: scale(1.05);
+    }
+  }
+
+
+  /* Redes sociais */
+
+  .redes {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: white;
+    }
+    
+    img {
+      width: 40px;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+    img:hover {
+      transform: scale(1.2);
+    }
+
+    @media(max-width:1000px){
+      img{
+        width: 30px;
+      }
+    }
+  }
+
+
+  .imagens {
+    display: flex;
+
+    gap: 15px;
+  }
+
+
+  /* Logo final */
+
+  .logo-final {
+    height: 250px;
+    @media(max-width:1000px){
+      width: 300px;
+      height: 150px;
+    }
+  }
+}
