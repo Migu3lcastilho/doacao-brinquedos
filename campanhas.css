@@ -53,6 +53,11 @@ header {
     color: white;
     font-size: 16px;
     font-weight: 600;
+
+    &:hover{
+            color: rgb(255, 213, 0);
+
+    }
   }
 
 
@@ -341,22 +346,27 @@ footer {
     }
 
     a {
-      display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      justify-content: center;
-      align-items: center;
+    border-radius: 20px;
 
-      border-radius: 20px;
+    background-color: #102A5F;
 
-      background-color: #102A5F;
+    text-decoration: none;
 
-      text-decoration: none;
+    width: 200px;
+    height: 50px;
 
-      width: 200px;
-      height: 50px;
+    color: white;
 
-      color: white;
-    }
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
   }
 
 
@@ -375,8 +385,15 @@ footer {
     }
 
     img {
-      width: 40px;
-    }
+    width: 40px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+    
 
     @media(max-width:1000px) {
       img {
