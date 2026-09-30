@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -123,12 +123,14 @@ header {
   .logo {
     img {
       width: 220px;
-      &:hover{
+
+      &:hover {
         opacity: 64%;
         transform: scale(1.1);
       }
     }
-    img:hover{
+
+    img:hover {
       transition: transform 0.8s ease;
     }
   }
@@ -168,227 +170,231 @@ header {
 .isOpen {
   transform: translateX(0) !important;
 }
+
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-    margin-bottom: 12px;
-    background: url('imagens/image\ 28.png') center center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  margin-bottom: 12px;
+  background: url('imagens/image\ 28.png') center center;
+  width: 100%;
+  height: 100%;
 
 
 
-    @media (max-width: 1050px) {
-        flex-direction: column;
-        gap: 80px;
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    gap: 80px;
 
-        .lado-direito {
-            width: 100%;
-        }
+    .lado-direito {
+      width: 100%;
+
     }
+  }
 }
 
 .contato {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
 
 
 }
 
 .contato h1 {
-    color: #E4B51A;
-    font-size: 42px;
-    font-weight: 600;
+  color: #E4B51A;
+  font-size: 42px;
+  font-weight: 600;
 }
 
 .contato p {
-    color: #173b7a;
-    font-size: 18px;
+  color: #173b7a;
+  font-size: 18px;
 }
 
 .informação {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
 
 
 
 }
 
 .informação img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
 }
 
 .informação p {
-    color: #173b7a;
-    font-size: 16px;
+  color: #173b7a;
+  font-size: 16px;
 }
 
 
 .lado-direito {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
+.enviada {
+        display: none;
+      }
 }
 
 
 
 
 .imagem-contato {
-    position: absolute;
+  position: absolute;
 
-    width: 300px;
+  width: 300px;
 
-    top: -108px;
-    right: -57px;
+  top: -108px;
+  right: -57px;
 
-    z-index: 2;
+  z-index: 2;
 
-    pointer-events: none;
+  pointer-events: none;
 }
 
 
 .lado-direito form {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    width: 650px;
-    min-height: 390px;
+  width: 650px;
+  min-height: 390px;
 
-    padding: 28px 35px 30px;
+  padding: 28px 35px 30px;
 
-    background: #E4B51A;
-    opacity: 84%;
-    border-radius: 30px;
+  background: #E4B51A;
+  opacity: 84%;
+  border-radius: 30px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 
 
 
-    @media (max-width: 450px) {
-        width: 350px;
+  @media (max-width: 450px) {
+    width: 350px;
 
-    }
+  }
 }
 
 
 
 .campos {
-    display: flex;
-    gap: 15px;
-    width: 100%;
+  display: flex;
+  gap: 15px;
+  width: 100%;
 }
 
 .campos input {
-    width: 50%;
+  width: 50%;
 }
 
 
 
 
 .lado-direito input {
-    height: 38px;
+  height: 38px;
 
-    padding: 0 12px;
+  padding: 0 12px;
 
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    background: #f5f5f7;
+  background: #f5f5f7;
 
-    color: #555;
+  color: #555;
 
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .lado-direito input::placeholder {
-    color: #71809d;
+  color: #71809d;
 }
 
 
 .Assunto {
-    width: 100%;
+  width: 100%;
 }
 
 
 
 .Mensagem {
-    width: 100%;
+  width: 100%;
 }
 
 .Mensagem textarea {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 
-    resize: none;
+  resize: none;
 
-    padding: 12px;
+  padding: 12px;
 
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    background: #f5f5f7;
+  background: #f5f5f7;
 
-    color: #555;
+  color: #555;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
 }
 
 .Mensagem textarea::placeholder {
-    color: #71809d;
+  color: #71809d;
 }
 
 
 
 
 .Enviar {
-    width: 215px;
-    height: 43px;
+  width: 215px;
+  height: 43px;
 
-    margin: 10px auto 0;
+  margin: 10px auto 0;
 
-    border: none;
-    border-radius: 13px;
+  border: none;
+  border-radius: 13px;
 
-    background: #173b7a;
+  background: #173b7a;
 
-    color: white;
+  color: white;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .Enviar:hover {
-    background: #102f63;
-    transform: scale(1.03);
+  background: #102f63;
+  transform: scale(1.03);
 }
 
 .Enviar img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
